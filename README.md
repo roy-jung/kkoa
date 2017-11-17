@@ -2,6 +2,11 @@
 
 > Analyzation for KakaoTalk Conversation
 
+카카오톡 대화분석기입니다.
+
+csv 파일만 됩니다.
+
+
 ## Build Setup
 
 ``` bash
