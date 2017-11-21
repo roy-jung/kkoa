@@ -22,7 +22,6 @@ const parse = r => {
 }
 
 export default {
-  name: 'InputBox',
   methods: {
     readFile (e) {
       const f = e.target.files[0]

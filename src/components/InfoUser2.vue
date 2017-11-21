@@ -9,7 +9,7 @@
       </colgroup>
       <tr v-for="(date, i) in (checked ? userData.sorted : userData.original)" :key="date[0]">
         <th>{{i + 1}}</th>
-        <td><strong>{{date[0]}}:00~ ({{date[1].size}})</strong></td>
+        <td><strong>{{date[0]}} ({{date[1].size}})</strong></td>
         <td>{{date[1]}}</td>
       </tr>
     </table>
@@ -26,8 +26,8 @@ export default {
     userData () {
       const data = new Map()
       this.talkData.dates.forEach((d, i) => {
-        const dd = moment(d).format('YY.MM.DD HH')
-        if (data.has(dd)) data.set(dd, data.get(dd).add(this.talkData.users[i]))
+        const dd = moment(d).format('YY.MM.DD HH') + ':00 ~'
+        if (data.has(dd)) data.get(dd).add(this.talkData.users[i])
         else {
           const set = new Set()
           set.add(this.talkData.users[i])

@@ -13,6 +13,7 @@ export default {
     selected: null,
     menus: [
       {type: 'InfoHour1', text: '시간대별 대화량'},
+      {type: 'InfoHour2', text: '유저별 시간대별 대화량'},
       {type: 'InfoUser1', text: '유저별 대화량'},
       {type: 'InfoUser2', text: '시간대별 활동유저'}
     ]

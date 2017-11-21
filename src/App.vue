@@ -13,6 +13,7 @@
 import InputBox from './components/InputBox'
 import Menus from './components/Menus'
 import InfoHour1 from './components/InfoHour1'
+import InfoHour2 from './components/InfoHour2'
 import InfoUser1 from './components/InfoUser1'
 import InfoUser2 from './components/InfoUser2'
 
@@ -22,6 +23,7 @@ export default {
     Menus,
     InfoHour1,
     InfoUser1,
+    InfoHour2,
     InfoUser2
   },
   data: () => ({
@@ -40,6 +42,9 @@ export default {
 </script>
 
 <style>
+html, body, #app, .wrap {
+  height: 100%;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -60,5 +65,9 @@ th, td {
 
 .hidden {
   display: none;
+}
+
+.chart {
+  width: 100%;
 }
 </style>
